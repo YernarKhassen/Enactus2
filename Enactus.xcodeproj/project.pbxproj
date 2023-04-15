@@ -38,6 +38,7 @@
 		70A1F72029EB52A3002FDC29 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F71F29EB52A3002FDC29 /* ScheduleViewController.swift */; };
 		70A1F72229EB52E5002FDC29 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F72129EB52E5002FDC29 /* ProfileViewController.swift */; };
 		70A1F72429EB5365002FDC29 /* ENTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F72329EB5365002FDC29 /* ENTabBarCoordinator.swift */; };
+		70A1F72929EB64BE002FDC29 /* MainImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F72829EB64BE002FDC29 /* MainImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -86,6 +87,7 @@
 		70A1F71F29EB52A3002FDC29 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		70A1F72129EB52E5002FDC29 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		70A1F72329EB5365002FDC29 /* ENTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENTabBarCoordinator.swift; sourceTree = "<group>"; };
+		70A1F72829EB64BE002FDC29 /* MainImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -365,7 +367,8 @@
 		70A1F71629EB500C002FDC29 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				70A1F71D29EB529C002FDC29 /* MainViewController.swift */,
+				70A1F72629EB54A6002FDC29 /* Controller */,
+				70A1F72529EB549F002FDC29 /* View */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -384,6 +387,22 @@
 				70A1F72129EB52E5002FDC29 /* ProfileViewController.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		70A1F72529EB549F002FDC29 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				70A1F72829EB64BE002FDC29 /* MainImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		70A1F72629EB54A6002FDC29 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				70A1F71D29EB529C002FDC29 /* MainViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,6 +492,7 @@
 				1D39B5F129C0F1C800D441B6 /* OnboardingViewController + Section.swift in Sources */,
 				1DC0504229D18F6A00581D6B /* OnboardingCoordinator.swift in Sources */,
 				1D42C82E29D1A82900D6610B /* SignInCoordinator.swift in Sources */,
+				70A1F72929EB64BE002FDC29 /* MainImageView.swift in Sources */,
 				70A1F71E29EB529C002FDC29 /* MainViewController.swift in Sources */,
 				70A1F72429EB5365002FDC29 /* ENTabBarCoordinator.swift in Sources */,
 				1D39B5E829C0ED8B00D441B6 /* OnboardingViewController.swift in Sources */,
