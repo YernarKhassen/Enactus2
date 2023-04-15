@@ -33,6 +33,11 @@
 		1DEA247929C1E3590043126A /* Mulish-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DEA247829C1E3590043126A /* Mulish-Regular.ttf */; };
 		7036D09C29D19B7C00E62230 /* GradientLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7036D09B29D19B7C00E62230 /* GradientLabel.swift */; };
 		70A1F6CF29DAFF63002FDC29 /* ENActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F6CE29DAFF63002FDC29 /* ENActivityIndicator.swift */; };
+		70A1F71829EB5019002FDC29 /* ENTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F71729EB5019002FDC29 /* ENTabBarController.swift */; };
+		70A1F71E29EB529C002FDC29 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F71D29EB529C002FDC29 /* MainViewController.swift */; };
+		70A1F72029EB52A3002FDC29 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F71F29EB52A3002FDC29 /* ScheduleViewController.swift */; };
+		70A1F72229EB52E5002FDC29 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F72129EB52E5002FDC29 /* ProfileViewController.swift */; };
+		70A1F72429EB5365002FDC29 /* ENTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F72329EB5365002FDC29 /* ENTabBarCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -76,6 +81,11 @@
 		1DEA247829C1E3590043126A /* Mulish-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Regular.ttf"; sourceTree = "<group>"; };
 		7036D09B29D19B7C00E62230 /* GradientLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientLabel.swift; sourceTree = "<group>"; };
 		70A1F6CE29DAFF63002FDC29 /* ENActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENActivityIndicator.swift; sourceTree = "<group>"; };
+		70A1F71729EB5019002FDC29 /* ENTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENTabBarController.swift; sourceTree = "<group>"; };
+		70A1F71D29EB529C002FDC29 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		70A1F71F29EB52A3002FDC29 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		70A1F72129EB52E5002FDC29 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		70A1F72329EB5365002FDC29 /* ENTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENTabBarCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +144,7 @@
 		1D39B5E329C0E9F400D441B6 /* Presentation Layer */ = {
 			isa = PBXGroup;
 			children = (
+				70A1F71229EB4F9C002FDC29 /* Tabbar */,
 				1D42C83229D1B3C600D6610B /* Authorization */,
 				1D39B5E429C0EAFD00D441B6 /* Onboarding */,
 			);
@@ -315,6 +326,66 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		70A1F71229EB4F9C002FDC29 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				70A1F71529EB4FD9002FDC29 /* Coordinator */,
+				70A1F71329EB4FC5002FDC29 /* View */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		70A1F71329EB4FC5002FDC29 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				70A1F71429EB4FD3002FDC29 /* Modules */,
+				70A1F71729EB5019002FDC29 /* ENTabBarController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		70A1F71429EB4FD3002FDC29 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				70A1F71A29EB526E002FDC29 /* Profile */,
+				70A1F71929EB5261002FDC29 /* Schedule */,
+				70A1F71629EB500C002FDC29 /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		70A1F71529EB4FD9002FDC29 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				70A1F72329EB5365002FDC29 /* ENTabBarCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		70A1F71629EB500C002FDC29 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				70A1F71D29EB529C002FDC29 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		70A1F71929EB5261002FDC29 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				70A1F71F29EB52A3002FDC29 /* ScheduleViewController.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		70A1F71A29EB526E002FDC29 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				70A1F72129EB52E5002FDC29 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -398,16 +469,21 @@
 			files = (
 				1DC0503B29D18E8A00581D6B /* AppCoordinator.swift in Sources */,
 				1D39B5D329C0E9E100D441B6 /* ViewController.swift in Sources */,
+				70A1F71829EB5019002FDC29 /* ENTabBarController.swift in Sources */,
 				1D39B5F129C0F1C800D441B6 /* OnboardingViewController + Section.swift in Sources */,
 				1DC0504229D18F6A00581D6B /* OnboardingCoordinator.swift in Sources */,
 				1D42C82E29D1A82900D6610B /* SignInCoordinator.swift in Sources */,
+				70A1F71E29EB529C002FDC29 /* MainViewController.swift in Sources */,
+				70A1F72429EB5365002FDC29 /* ENTabBarCoordinator.swift in Sources */,
 				1D39B5E829C0ED8B00D441B6 /* OnboardingViewController.swift in Sources */,
 				7036D09C29D19B7C00E62230 /* GradientLabel.swift in Sources */,
+				70A1F72029EB52A3002FDC29 /* ScheduleViewController.swift in Sources */,
 				1D167E3F29C1EC5B00CEEFAA /* WelcomeCollectionViewCell.swift in Sources */,
 				1D39B5CF29C0E9E100D441B6 /* AppDelegate.swift in Sources */,
 				1D42C83129D1A8AE00D6610B /* SignInViewController.swift in Sources */,
 				1D39B5EA29C0EE4D00D441B6 /* OnboardingCollectionView.swift in Sources */,
 				1D42C83929D1B41200D6610B /* LogInCoordinator.swift in Sources */,
+				70A1F72229EB52E5002FDC29 /* ProfileViewController.swift in Sources */,
 				1D39B5F729C0F27400D441B6 /* OnboardingViewModel.swift in Sources */,
 				1DC0503E29D18EC200581D6B /* Coordinator.swift in Sources */,
 				1D42C83529D1B3E100D6610B /* LogInViewController.swift in Sources */,
