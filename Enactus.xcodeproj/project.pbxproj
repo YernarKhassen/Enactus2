@@ -39,6 +39,11 @@
 		70A1F72229EB52E5002FDC29 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F72129EB52E5002FDC29 /* ProfileViewController.swift */; };
 		70A1F72429EB5365002FDC29 /* ENTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F72329EB5365002FDC29 /* ENTabBarCoordinator.swift */; };
 		70A1F72929EB64BE002FDC29 /* MainImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F72829EB64BE002FDC29 /* MainImageView.swift */; };
+		70A1F72B29EB84F3002FDC29 /* ActionsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F72A29EB84F3002FDC29 /* ActionsViewCell.swift */; };
+		70A1F72D29EB863A002FDC29 /* MainViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F72C29EB863A002FDC29 /* MainViewController+CollectionView.swift */; };
+		70A1F73029EB88D6002FDC29 /* ActionsViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F72F29EB88D6002FDC29 /* ActionsViewCellViewModel.swift */; };
+		70A1F73229EB89A1002FDC29 /* MainViewController+ActionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F73129EB89A1002FDC29 /* MainViewController+ActionSection.swift */; };
+		70A1F73429EBEBB8002FDC29 /* ReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F73329EBEBB8002FDC29 /* ReminderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -88,6 +93,11 @@
 		70A1F72129EB52E5002FDC29 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		70A1F72329EB5365002FDC29 /* ENTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENTabBarCoordinator.swift; sourceTree = "<group>"; };
 		70A1F72829EB64BE002FDC29 /* MainImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainImageView.swift; sourceTree = "<group>"; };
+		70A1F72A29EB84F3002FDC29 /* ActionsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsViewCell.swift; sourceTree = "<group>"; };
+		70A1F72C29EB863A002FDC29 /* MainViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+CollectionView.swift"; sourceTree = "<group>"; };
+		70A1F72F29EB88D6002FDC29 /* ActionsViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsViewCellViewModel.swift; sourceTree = "<group>"; };
+		70A1F73129EB89A1002FDC29 /* MainViewController+ActionSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+ActionSection.swift"; sourceTree = "<group>"; };
+		70A1F73329EBEBB8002FDC29 /* ReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -367,6 +377,7 @@
 		70A1F71629EB500C002FDC29 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				70A1F72E29EB874D002FDC29 /* ViewModel */,
 				70A1F72629EB54A6002FDC29 /* Controller */,
 				70A1F72529EB549F002FDC29 /* View */,
 			);
@@ -392,7 +403,9 @@
 		70A1F72529EB549F002FDC29 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				70A1F73529EBF788002FDC29 /* Cell */,
 				70A1F72829EB64BE002FDC29 /* MainImageView.swift */,
+				70A1F73329EBEBB8002FDC29 /* ReminderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -401,8 +414,26 @@
 			isa = PBXGroup;
 			children = (
 				70A1F71D29EB529C002FDC29 /* MainViewController.swift */,
+				70A1F72C29EB863A002FDC29 /* MainViewController+CollectionView.swift */,
+				70A1F73129EB89A1002FDC29 /* MainViewController+ActionSection.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		70A1F72E29EB874D002FDC29 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				70A1F72F29EB88D6002FDC29 /* ActionsViewCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		70A1F73529EBF788002FDC29 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				70A1F72A29EB84F3002FDC29 /* ActionsViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -491,12 +522,15 @@
 				70A1F71829EB5019002FDC29 /* ENTabBarController.swift in Sources */,
 				1D39B5F129C0F1C800D441B6 /* OnboardingViewController + Section.swift in Sources */,
 				1DC0504229D18F6A00581D6B /* OnboardingCoordinator.swift in Sources */,
+				70A1F73029EB88D6002FDC29 /* ActionsViewCellViewModel.swift in Sources */,
 				1D42C82E29D1A82900D6610B /* SignInCoordinator.swift in Sources */,
 				70A1F72929EB64BE002FDC29 /* MainImageView.swift in Sources */,
 				70A1F71E29EB529C002FDC29 /* MainViewController.swift in Sources */,
+				70A1F72B29EB84F3002FDC29 /* ActionsViewCell.swift in Sources */,
 				70A1F72429EB5365002FDC29 /* ENTabBarCoordinator.swift in Sources */,
 				1D39B5E829C0ED8B00D441B6 /* OnboardingViewController.swift in Sources */,
 				7036D09C29D19B7C00E62230 /* GradientLabel.swift in Sources */,
+				70A1F72D29EB863A002FDC29 /* MainViewController+CollectionView.swift in Sources */,
 				70A1F72029EB52A3002FDC29 /* ScheduleViewController.swift in Sources */,
 				1D167E3F29C1EC5B00CEEFAA /* WelcomeCollectionViewCell.swift in Sources */,
 				1D39B5CF29C0E9E100D441B6 /* AppDelegate.swift in Sources */,
@@ -508,6 +542,8 @@
 				1DC0503E29D18EC200581D6B /* Coordinator.swift in Sources */,
 				1D42C83529D1B3E100D6610B /* LogInViewController.swift in Sources */,
 				1DEA247429C1D7970043126A /* Colors + Extension.swift in Sources */,
+				70A1F73229EB89A1002FDC29 /* MainViewController+ActionSection.swift in Sources */,
+				70A1F73429EBEBB8002FDC29 /* ReminderView.swift in Sources */,
 				1D39B5FB29C0F44A00D441B6 /* CollectionView.swift in Sources */,
 				70A1F6CF29DAFF63002FDC29 /* ENActivityIndicator.swift in Sources */,
 				1D39B5F429C0F23F00D441B6 /* OnboardingCollectionViewCell.swift in Sources */,
