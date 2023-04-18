@@ -6,6 +6,8 @@ final class MainViewController: UIViewController {
     //MARK: - Properties
     let actionSections: [Action] = [.init(section: .action, rows: [.remittance, .shop, .credits, .faq])]
     
+    let mainViewModel = MainViewModel()
+    
     //MARK: - View
     private lazy var mainImageView = MainImageView()
     
@@ -23,6 +25,11 @@ final class MainViewController: UIViewController {
     private lazy var reminderView = ReminderView()
     
     //MARK: - LifeCycle
+    override func loadView() {
+        super.loadView()
+        fetchOrganizationList()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
@@ -67,5 +74,11 @@ final class MainViewController: UIViewController {
     
     private func setupColors() {
         view.backgroundColor = .enWhite
+    }
+}
+
+extension MainViewController {
+    func fetchOrganizationList() {
+        mainViewModel.fetchOrganizationsList()
     }
 }
